@@ -25,11 +25,11 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Moment Of Zen',
+          tabBarIcon: ({ color }) => <TabBarIcon name="music" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
-              <Pressable>
+              {/* <Pressable>
                 {({ pressed }) => (
                   <FontAwesome
                     name="info-circle"
@@ -38,7 +38,7 @@ export default function TabLayout() {
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
                   />
                 )}
-              </Pressable>
+              </Pressable> */}
             </Link>
           ),
         }}
@@ -46,8 +46,8 @@ export default function TabLayout() {
       <Tabs.Screen
         name="two"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Need To Know',
+          tabBarIcon: ({ color }) => <TabBarIcon name="music" color={color} />,
         }}
       />
     </Tabs>
