@@ -13,13 +13,16 @@ const Dork = styled(Text)`
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/nH3mPx0Hm6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+      style={{marginBottom: "25px"}}></iframe>
+    
          <Image style={{width: 200, height: 200}} source={{uri: "album art.JPG"}}></Image>
       <Dork  style={{marginTop:20}}>Sun Spoiler</Dork>
       {/* <Text style={styles.title}>Tab One</Text> */}
       <Text style={styles.scream}>Moment Of Zen</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       {/* <EditScreenInfo path="app/(tabs)/index.tsx" /> */}
-      <audio controls>
+        <audio controls>
         <source src="moment of zen.mp3" type="audio/mpeg" />
       </audio>
     </View>

@@ -6,7 +6,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build:web": "expo build:web",
+    "export": "npx expo export",
     "test": "jest --watchAll"
   },
   "jest": {
@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@expo/webpack-config": "^18.1.0",
     "@types/react": "~18.0.14",
     "@types/react-native": "^0.71.5",
     "@types/styled-components": "^5.1.26",
